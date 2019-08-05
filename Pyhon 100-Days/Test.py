@@ -1,7 +1,6 @@
 import random
 import math
 
-'''
 # T1:将华氏温度转摄氏温度。
 #  F = 1.8C + 32
 
@@ -52,7 +51,7 @@ elif b == 5:
 else:
     result = "打印6"
 print(result)
-'''
+
 
 # T6：百分制成绩转等级制
 score = float(input("分数:"))
@@ -106,6 +105,6 @@ elif diff < 80000:
 else:
     rate = 0.45
     deduction = 13505
-tax = abs(diff * rate - deduction)
+tax = abs(diff * rate - deduction)          #abs函数：Python内置的abs()函数取绝对值来处理-0的问题。
 print("个人所得税: {0}元".format(tax))
 print("实际到手收入: {0}元" .format ((diff + 3500 - tax)))
